@@ -9,7 +9,7 @@ _**Bu bot, gruplarda 10.000'e kadar üyeden bahsedebilir ve kanallarda 200'e kad
 - [Developer](https://t.me/SakirBey2)✨
 
 ### 🚀 Deploy to heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/alihqn11/tagger)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SakirBey1/new_edition_tagger)
 
 ### 🎯 Bana Destek Olmak İstermisin Aşğıdaki Bağlantıdan Bağış Yapa Bilirsin
 
