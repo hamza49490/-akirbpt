@@ -284,7 +284,7 @@ async def mentionall(tagadmin):
 		
 @client.on(events.NewMessage(pattern='/alive'))
 async def handler(event):
-    # Respond whenever someone says "Hello" and something else
+    # Alive Bot Durumunu Kontrol Etme Yalnızca Adminler İçin !
     if str(event.sender_id) not in SUDO_USERS:
         return await event.reply("__Sen sahibim değilsin !__")
     await event.reply('**Hey Bot Çalışıyor Merak Etme** \n Developer @SakirBey1')
@@ -297,7 +297,7 @@ async def handler(event):
 @client.on(events.NewMessage(pattern='/bagis'))
 async def handler(event):
 	
-    await event.reply('**Tagger Botun Bağış Menüsü** \n\nPapara No: 1744892543 \n\n  ✨')
+    await event.reply('**Tagger Botun Bağış Menüsü** \n\n__Papara No:__ `1744892543` \n\n  ✨')
 
 @client.on(events.NewMessage(pattern='/reklam'))
 async def handler(event):
