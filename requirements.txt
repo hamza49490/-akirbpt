@@ -3,3 +3,6 @@ cryptg
 requests
 pyrogram==1.3.6
 tgcrypto
+pymongo[srv]
+aiofiles
+psutil
