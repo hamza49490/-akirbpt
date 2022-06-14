@@ -292,7 +292,7 @@ async def handler(event):
 @client.on(events.NewMessage(pattern='/durum'))
 async def handler(event):
 	
-    await event.reply('**Tagger Bot un Durum Menüsü** \n Durum: Çalışıyor✅ \n Telethon Sürümü: v1.24.0 \n Python Sürümü: v3.8+ \n Bot Sürümü: v0.2 \n Bu Botun Developeri @SakirBey1 dir')
+    await event.reply('**Tagger Bot un Durum Menüsü** \n\n __Durum:__ `Çalışıyor✅` \n\n **Telethon Sürümü:** __v1.24.0__ \n\n**Python Sürümü:** __v3.8+__ \n\n **Bot Sürümü:** __v0.3__ \n\n **Bu Botun Developeri** @SakirBey1 **dir**')
 
 @client.on(events.NewMessage(pattern='/bagis'))
 async def handler(event):
