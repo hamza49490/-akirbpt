@@ -14,7 +14,7 @@ app = Client(
 )
 
 
-@Client.on_message(filters.new_chat_members, group=1)
+@app.on_message(filters.new_chat_members, group=1)
 async def hg(bot: Client, msg: Message):
     for new_user in msg.new_chat_members:
         if str(new_user.id) == str(Config.BOT_ID):
@@ -24,14 +24,14 @@ async def hg(bot: Client, msg: Message):
         elif str(new_user.id) == str(Config.OWNER_ID):
             await msg.reply('İşte bu gelen benim sahibim.')
             
-@Client.on_message(filters.command("pyrogram"))
+@app.on_message(filters.command("pyrogram"))
 async def _py(client: Client, message: Message):
     await message.reply_text('Pyrogram is a Python library for Telegram bots.')
 
 
 
  
-@Client.on_message(filters.command("id"))
+@app.on_message(filters.command("id"))
 async def _id(_, message: Message):
     msg = message.reply_to_message or message
     out_str = "**User İnfo:**\n"
@@ -43,7 +43,7 @@ async def _id(_, message: Message):
  
     await message.reply(out_str)
 
-@Client.on_message(filters.command("info"))
+@app.on_message(filters.command("info"))
 async def _id(_, message: Message):
     msg = message.reply_to_message or message
     out_str = "**User İnfo:**\n"
@@ -55,7 +55,7 @@ async def _id(_, message: Message):
  
     await message.reply(out_str)
 
-@Client.on_message(filters.command("ping"))
+@app.on_message(filters.command("ping"))
 async def pingy(client, message):
     start = datetime.now()
     hmm = await message.reply("Pong!")
