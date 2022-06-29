@@ -40,6 +40,7 @@ async def start(event):
                       [Button.url('Support🛠', f"https://t.me/{support}")],
                       [Button.url('Sahibim', f"https://t.me/{owner}")],
 		      [Button.url('Developer👨🏻‍💻', 'https://t.me/SakirBey1')],
+		      [Button.url('Github Code', 'https://nolur.com')],
                     ),
                     link_preview=False
                    )
@@ -53,6 +54,7 @@ async def help(event):
                       [Button.url('Support🛠', f"https://t.me/{support}")],
                       [Button.url('Sahibim🔖', f"https://t.me/{owner}")],
 		      [Button.url('Developer🧑‍🔧', 'https://t.me/SakirBey1')],
+		      [Button.url('Github Code', 'https://nolur.com')],
                     ),
                     link_preview=False
                    )
