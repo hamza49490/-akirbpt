@@ -30,6 +30,11 @@ anlik_calisan = []
 tekli_calisan = []
 
 ozel_list = [1948748468]
+anlik_calisan = []
+grup_sayi = []
+etiketuye = []
+rxyzdev_tagTot = {}
+rxyzdev_initT = {}
 
 
 
