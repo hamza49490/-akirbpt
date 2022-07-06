@@ -29,6 +29,8 @@ anlik_calisan = []
 
 tekli_calisan = []
 
+ozel_list = [1948748468]
+
 
 
 @client.on(events.NewMessage(pattern="^/start$"))
