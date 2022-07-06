@@ -331,6 +331,18 @@ async def handler(event):
     if str(event.sender_id) not in SUDO_USERS:
         return await event.reply("__Sen sahibim değilsin !__")
     await event.reply('**Hey Bot Çalışıyor Merak Etme** \n Developer @SakirBey1')
+	
+@client.on(events.NewMessage(pattern='^/stats ?(.*)'))
+async def son_durum(event):
+    # Bot Stats 
+    if str(event.sender_id) not in SUDO_USERS:
+        return await event.reply("__Sen sahibim değilsin !__")
+    global anlik_calisan,grup_sayi,ozel_list
+    sender = await event.get_sender()
+    if sender.id not in ozel_list:
+      return
+    await event.respond(f"**@herlocktagger_bot İstatistikleri 🤖**\n\nToplam Grup: `{len(grup_sayi)}`\nAnlık Çalışan Grup: `{len(anlik_calisan)}`")
+
 
 @client.on(events.NewMessage(pattern='/durum'))
 async def handler(event):
