@@ -5,7 +5,7 @@ _**Bu bot, gruplarda 10.000'e kadar üyeden bahsedebilir ve kanallarda 200'e kad
 
 ### 🗂 Bilgi
 - Dil: Python.
-- Telgraf Kütüphanesi: Telethon & Pyrogram İlk Ve Tek.
+- Libraries Kütüphaneler: Telethon & Pyrogram İlk Ve Tek.
 - [Developer](https://t.me/SakirBey2)✨
 
 ### 🚀 Deploy to heroku
