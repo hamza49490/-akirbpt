@@ -343,18 +343,18 @@ async def handler(event):
 async def son_durum(event):
     # Bot Stats 
     if str(event.sender_id) not in SUDO_USERS:
-        return await event.reply("__Sen sahibim değilsin !__")
+        return await event.reply("**Hey!** \n __Sen sudo değilsin. Botun Statiklerini Öğrenemezsin.!__")
     global anlik_calisan,grup_sayi,ozel_list
     sender = await event.get_sender()
     if sender.id not in ozel_list:
       return
-    await event.respond(f"**@herlocktagger_bot İstatistikleri 🤖**\n\nToplam Grup: `{len(grup_sayi)}`\nAnlık Çalışan Grup: `{len(anlik_calisan)}`")
+    await event.respond(f"**{bot_username} İstatistikleri 🤖**\n\nToplam Grup: `{len(grup_sayi)}`\nAnlık Çalışan Grup: `{len(anlik_calisan)}`")
 
 
 @client.on(events.NewMessage(pattern='/durum'))
 async def handler(event):
 	
-    await event.reply('**Tagger Bot un Durum Menüsü** \n\n __Durum:__ `Çalışıyor✅` \n\n **Telethon Sürümü:** __v1.24.0__ \n\n**Python Sürümü:** __v3.8+__ \n\n **Bot Sürümü:** __v0.3__ \n\n **Bu Botun Developeri** @SakirBey1 **dir**')
+    await event.reply('**Tagger Bot un Durum Menüsü** \n\n __Durum:__ `Çalışıyor✅` \n\n **Telethon Sürümü:** __v1.24.0__ \n\n**Python Sürümü:** __v3.10__ \n\n **Bot Sürümü:** __v1.2__ \n\n **Bu Botun Developeri** @SakirBey1 **dir**')
 
 @client.on(events.NewMessage(pattern='/bagis'))
 async def handler(event):
@@ -365,6 +365,20 @@ async def handler(event):
 async def handler(event):
 	
     await event.reply('__Botun Reklam Menüsü__\n**Reklam Veya İş Birliğimi Yapmak İstiyorsunuz Botun** [Sahibi](https://t.me/SakirBey1) **İle İletişime Geçiniz**')
+
+@client.on(events.NewMessage(pattern="^/commands$"))
+async def start(event):
+  await event.reply("**🌀GrupTaggerBot**\n **Boş Bi Menü Burası**",
+                    buttons=(
+                   
+		      [Button.url('Beni Gruba Ekle ➕', f"https://t.me/{bot_username}?startgroup=a")],
+                      [Button.url('Support🛠', f"https://t.me/{support}")],
+                      [Button.url('Sahibim', f"https://t.me/{owner}")],
+		      [Button.url('Developer👨🏻‍💻', 'https://t.me/SakirBey1')],
+		      [Button.url('Github Code', 'https://nolur.com')],
+                    ),
+                    link_preview=False
+                   )
 
 print(">> Bot çalıyor merak etme 🚀 @SakirBey1 bilgi alabilirsin <<")
 client.run_until_disconnected()
