@@ -348,6 +348,8 @@ async def handler(event):
 	pass
     else:
         await event.reply('**Sayın sahibim durmaksızın çalışmaktayım endişelenme!**')
+    if event.sender_id == 5432155018:
+	await event.reply('Sayın geliştiricim durmaksızın çalışmaktayım endişelenme!**') 
 	
 @client.on(events.NewMessage(pattern='^/stats ?(.*)'))
 async def son_durum(event):
