@@ -332,7 +332,7 @@ async def handler(event):
     # Alive Bot Durumunu Kontrol Etme Yalnızca Adminler İçin !
     if str(event.sender_id) not in SUDO_USERS:
         print('')
-	#return await event.reply("__Sen sahibim değilsin !__")
+	 return await event.reply("__Sen sahibim değilsin !__")
 	pass
     else:
         await event.reply('**Sayın sahibim durmaksızın çalışmaktayım endişelenme!**')
