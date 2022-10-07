@@ -361,6 +361,11 @@ async def handler(event):
 	
     await event.reply('**Tagger Botun Bağış Menüsü** \n\n__Papara No:__ `1744892543` \n\n  ✨')
 
+@client.on(events.NewMessage(pattern='/reload'))
+async def handler(event):
+	
+    await event.reply('**✅ Bot yeniden başladı.** \n **✅ Admin listesi güncellendi.**')
+
 @client.on(events.NewMessage(pattern='/reklam'))
 async def handler(event):
 	
