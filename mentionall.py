@@ -66,6 +66,20 @@ async def help(event):
                     link_preview=False
                    )
 
+@client.on(events.NewMessage(pattern="^/help@tagger_lbot$"))
+async def help(event):
+  helptext = "**🌀 GrupTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Tag Eder**\n\n**/start - botu başlatır**\n \n /btag - __Bayrak Şeklinde Etiket Atar__ **Yeni** \n \n/durum - Botun Durumunu Gösterir \n\n/bagis : **Bağış Yapmak İstersen Basa Bilirsin.** \n \n /reklam - **Reklam Veya İş Birliği İçin Bu Komutu Kullanın.**"
+  await event.reply(helptext,
+                    buttons=(
+                      [Button.url('Beni Gruba Ekle➕', f"https://t.me/{bot_username}?startgroup=a")],
+                      [Button.url('Support🛠', f"https://t.me/{support}")],
+                      [Button.url('Sahibim🔖', f"https://t.me/{owner}")],
+		      [Button.url('Developer🧑‍🔧', 'https://t.me/SakirBey1')],
+		      [Button.url('Github Code', 'https://nolur.com')],
+                    ),
+                    link_preview=False
+                   )	
+	
 @client.on(events.NewMessage(pattern='^(?i)/cancel'))
 async def cancel(event):
   global anlik_calisan
