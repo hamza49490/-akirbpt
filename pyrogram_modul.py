@@ -47,9 +47,8 @@ async def start(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔧 Geliştirici", url="https://t.me/SakirBey1
-                ],
-                [
+                        "🔧 Geliştirici", url="https://t.me/SakirBey1"
+                    ),
                     InlineKeyboardButton(
                         "🌀 Komutlar", callback_data="help"
                     ),
