@@ -30,7 +30,7 @@ async def hg(bot: Client, msg: Message):
 async def _py(client: Client, message: Message):
     await message.reply_text('Pyrogram is a Python library for Telegram bots.')
 
-@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
+@app.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
         caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde üyeleri etiketleyen botum. """),
         reply_markup=InlineKeyboardMarkup(
