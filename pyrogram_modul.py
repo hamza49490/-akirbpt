@@ -92,13 +92,6 @@ async def pingy(client, message):
     ms = (end - start).microseconds / 1000
     await hmm.edit(
         f"█▀█ █▀█ █▄░█ █▀▀ █ \n█▀▀ █▄█ █░▀█ █▄█ ▄\n**Ping: {round(ms)}**")
-
-
-[
-                    InlineKeyboardButton(
-                        "🌀 Komutlar", callback_data="cbbilgi"
-                    ),
-    
     
 app.start()
 print(f"Botun pyrogram modülleri ( {pyrogram.__version__} sürümü ile başlatıldı. ")
