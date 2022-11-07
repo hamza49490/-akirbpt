@@ -55,9 +55,6 @@ async def start(_, message: Message):
                 ]
             ]
         )
-    )
-
-
  
 @app.on_message(filters.command("id"))
 async def _id(_, message: Message):
