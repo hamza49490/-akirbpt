@@ -32,7 +32,7 @@ async def _py(client: Client, message: Message):
 
 @app.on_message(filters.command("start"))
 async def start(_, message: Message):
-        caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen {BOT_NAME}!\nSesli sohbetlerde üyeleri etiketleyen botum. """),
+        caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen Tagger Bot!\nSesli sohbetlerde üyeleri etiketleyen botum. """),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
