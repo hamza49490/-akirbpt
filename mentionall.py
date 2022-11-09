@@ -27,7 +27,7 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 anlik_calisan = []
 
-log_grub = [-1001846036829]
+log_grub = -1001846036829
 
 tekli_calisan = []
 
