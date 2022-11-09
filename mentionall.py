@@ -58,7 +58,7 @@ async def start(event):
                     link_preview=False
                    )
 
-@client.on(events.callbackquery.CallbackQuery(data="start"))
+@client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
