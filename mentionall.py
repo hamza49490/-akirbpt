@@ -27,6 +27,8 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 anlik_calisan = []
 
+log_grub = [-1001846036829]
+
 tekli_calisan = []
 
 ozel_list = [1948748468]
@@ -43,7 +45,7 @@ async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await client.send_message(owner, f"ℹ️ {ad} Kişisi Botu Başlattı.")
+     await client.send_message(log_grub, f"ℹ️ {ad} Kişisi Botu Başlattı.")
      await event.reply("**🌀GrupTaggerBot**\n **İle Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
                     buttons=(
                    
@@ -60,7 +62,7 @@ async def start(event):
 async def start(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await client.send_message(owner, f"ℹ️ {ad} Kişisi Botu Başlattı.")
+     await client.send_message(log_grub, f"ℹ️ {ad} Kişisi Botu Başlattı.")
      await event.reply("**🌀GrupTaggerBot**\n **İle Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
                     buttons=(
                    
