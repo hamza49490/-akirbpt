@@ -56,6 +56,23 @@ async def start(event):
                     link_preview=False
                    )
 
+@client.on(events.NewMessage(pattern="^/start$"))
+async def start(event):
+    async for usr in client.iter_participants(event.chat_id):
+     ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
+     await client.send_message(owner, f"ℹ️ {ad} Kişisi Botu Başlattı.")
+     await event.reply("**🌀GrupTaggerBot**\n **İle Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
+                    buttons=(
+                   
+		      [Button.url('Beni Gruba Ekle ➕', f"https://t.me/{bot_username}?startgroup=a")],
+                      [Button.url('Support🛠', f"https://t.me/{support}")],
+                      [Button.url('Sahibim', f"https://t.me/{owner}")],
+		      [Button.url('Developer👨🏻‍💻', 'https://t.me/SakirBey1')],
+		      [Button.url('Github Code', 'https://nolur.com')],
+                    ),
+                    link_preview=False
+                   )
+
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
   helptext = "**🌀 GrupTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Tag Eder**\n\n**/start - botu başlatır**\n \n /btag - __Bayrak Şeklinde Etiket Atar__ **Yeni** \n \n/durum - Botun Durumunu Gösterir \n\n/bagis : **Bağış Yapmak İstersen Basa Bilirsin.** \n \n /reklam - **Reklam Veya İş Birliği İçin Bu Komutu Kullanın.**"
