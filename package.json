@@ -1,0 +1,22 @@
+{
+  "name": "new_edition_tagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+vvhttps://github.com/SakirBey1/new_edition_tagger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyclic-software/starter-express-api/issues"
+  },
+  "homepage": "https://github.com/SakirBey1/new_edition_tagger#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
