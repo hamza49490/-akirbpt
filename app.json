@@ -5,43 +5,43 @@
   "env": {
     "BOT_TOKEN": {
       "description": "bot token girin.",
-      "value": ""
+      "value": "5787704329:AAFV3OLbI4sFxa_LdPmrYWescvI3vVwIFOQ"
     },
     "API_ID": {
       "description": "@otomytelegrambot dan api hash api id alınız.",
-      "value": ""
+      "value": "3793309"
     },
     "API_HASH": {
       "description": "@otomytelegrambot dan api hash api id alınız.",
-      "value": ""
+      "value": "fe42ab8e509ea3f4628e82de05f3f1e3"
     },
     "BOT_NAME": {
       "description": "botun adını girin.",
-      "value": ""
+      "value": "Aoc TaggerBot"
     },
     "BOT_USERNAME": {
       "description": "botun adresini girin.",
-      "value": ""
+      "value": "aoctagger_bot"
     },
     "BOT_ID": {
       "description": "botun id'sini girin.",
-      "value": ""
+      "value": "5787704329"
     },
     "SUDO_USERS": {
       "description": "botun sahibini girin.",
-      "value": ""
+      "value": "1948748468"
     },
     "SUPPORT_CHAT": {
       "description": "botun destek grubunu girin.",
-      "value": ""
+      "value": "aocsupport_bot"
     },
     "OWNER_ID": {
       "description": "botun sahibinin id'sini girin.",
-      "value": ""
+      "value": "1948748468"
     },
     "OWNER_USERNAME": {
       "description": "botun sahibinin adresini girin.",
-      "value": ""
+      "value": "SakirBey1"
     }
   },
   "buildpacks": [{
