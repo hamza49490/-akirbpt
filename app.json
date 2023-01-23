@@ -5,7 +5,7 @@
   "env": {
     "BOT_TOKEN": {
       "description": "bot token girin.",
-      "value": "5787704329:AAFV3OLbI4sFxa_LdPmrYWescvI3vVwIFOQ"
+      "value": "5125459394:AAHQaPvKN66HJJlsnQIB5B-c4r-BouJzmd0"
     },
     "API_ID": {
       "description": "@otomytelegrambot dan api hash api id alınız.",
@@ -17,15 +17,15 @@
     },
     "BOT_NAME": {
       "description": "botun adını girin.",
-      "value": "Aoc TaggerBot"
+      "value": "Kaptan Tagger"
     },
     "BOT_USERNAME": {
       "description": "botun adresini girin.",
-      "value": "aoctagger_bot"
+      "value": "KaptanTaggerBot"
     },
     "BOT_ID": {
       "description": "botun id'sini girin.",
-      "value": "5787704329"
+      "value": "5125459394"
     },
     "SUDO_USERS": {
       "description": "botun sahibini girin.",
