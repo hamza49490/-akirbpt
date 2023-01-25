@@ -4,13 +4,13 @@ import os
 class Config():
     # Get these values from my.telegram.org
     # https://my.telegram.org
-    API_ID = int(os.environ.get("API_ID"))
-    API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME")
-    BOT_NAME = os.environ.get("BOT_NAME")
-    BOT_ID = int(os.environ.get("BOT_ID"))
-    SUDO_USERS = os.environ.get("SUDO_USERS").split()
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT")
-    OWNER_ID = int(os.environ.get("OWNER_ID"))
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME")
+    API_ID = int(os.environ.get("3793309"))
+    API_HASH = os.environ.get("fe42ab8e509ea3f4628e82de05f3f1e3")
+    BOT_TOKEN = os.environ.get("5125459394:AAHQaPvKN66HJJlsnQIB5B-c4r-BouJzmd0")
+    BOT_USERNAME = os.environ.get("KaptanTaggerBot")
+    BOT_NAME = os.environ.get("Kaptan Tagger")
+    BOT_ID = int(os.environ.get("5125459394"))
+    SUDO_USERS = os.environ.get("1948748468").split()
+    SUPPORT_CHAT = os.environ.get("siyahiler")
+    OWNER_ID = int(os.environ.get("1948748468"))
+    OWNER_USERNAME = os.environ.get("SakirBey1")
