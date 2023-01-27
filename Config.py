@@ -11,6 +11,6 @@ class Config():
     BOT_NAME = os.environ.get("Kaptan Tagger")
     BOT_ID = int(os.environ.get("5125459394"))
     SUDO_USERS = os.environ.get("1948748468").split()
-    SUPPORT_CHAT = os.environ.get("siyahiler")
+    SUPPORT_CHAT = os.environ.get("KaptanSupportGroup")
     OWNER_ID = int(os.environ.get("1948748468"))
     OWNER_USERNAME = os.environ.get("SakirBey1")
