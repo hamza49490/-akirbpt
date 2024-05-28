@@ -1,7 +1,7 @@
-telethon==1.31.1
+telethon
 cryptg
 requests
-pyrogram==1.4.6
+pyrogram
 tgcrypto
 pymongo[srv]
 aiofiles
