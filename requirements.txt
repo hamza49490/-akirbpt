@@ -1,4 +1,4 @@
-telethon==1.29.1
+telethon==1.29.2
 cryptg
 requests
 pyrogram==1.3.6
